@@ -1,7 +1,6 @@
 # TIL
-Today I Learned
 
-> RegExp 정규표현식
+> [RegExp 정규표현식](https://github.com/beom220/TIL/tree/main/RegExp) 
 > - 주민번호와 생년월일 검사
 
 
