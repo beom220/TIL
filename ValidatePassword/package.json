@@ -1,0 +1,25 @@
+{
+  "name": "validatepassword",
+  "version": "1.0.0",
+  "description": "validate password",
+  "main": "main.ts",
+  "scripts": {
+    "sample": "ts-node sample.ts",
+    "test": "jest"
+  },
+  "keywords": [
+    "vaildate",
+    "password"
+  ],
+  "author": "beom220",
+  "license": "ISC",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "tsc-node": "^0.0.3",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0"
+  }
+}
