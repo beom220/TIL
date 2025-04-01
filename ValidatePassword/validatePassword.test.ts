@@ -1,5 +1,6 @@
-import {hasRequiredCharacters, isConsecutive, isKeyboardSequence, validatePassword} from "./main";
+import {hasRequiredCharacters, isConsecutive, isKeyboardSequence} from "./internal";
 import {getConsecutiveKeyboardLetters, getErrorMessage} from "./utils";
+import {validatePassword} from "./main";
 
 
 describe('비밀번호 검증 테스트', () => {

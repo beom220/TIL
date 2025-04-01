@@ -7,5 +7,10 @@
     "skipLibCheck": true, // 라이브러리 파일 검사 건너뛰기
     "resolveJsonModule": true, // JSON 모듈을 import 할 수 있도록 설정
     "strict": true, // 엄격한 타입 검사
-  }
+    "declaration": true /* 타입스크립트가 자동으로 타입정의 (d.ts) 파일을 생성해 준다. */,
+    "outDir": "./dist",
+    "rootDir": "./",
+    "sourceMap": true,
+  },
+  "include": ["main.ts", "utils", "constants"]
 }

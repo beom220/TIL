@@ -1,11 +1,22 @@
 {
-  "name": "validatepassword",
-  "version": "1.0.0",
+  "name": "@beom220/validatepassword",
+  "version": "0.0.3",
+  "type": "module",
   "description": "validate password",
-  "main": "main.ts",
+  "main": "dist/main.cjs",
+  "module": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "exports": {
+    "require": "./dist/main.cjs",
+    "import": "./dist/main.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "sample": "ts-node sample.ts",
-    "test": "jest"
+    "build": "tsup main.ts --format esm,cjs --dts --outDir dist",
+    "test": "jest",
+    "sample": "ts-node sample.ts"
   },
   "keywords": [
     "vaildate",
@@ -13,13 +24,13 @@
   ],
   "author": "beom220",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "tsup": "^8.4.0",
     "ts-node": "^10.9.2",
     "tsc-node": "^0.0.3",
     "typescript": "^5.8.2"
-  },
-  "devDependencies": {
-    "@types/jest": "^29.5.14",
-    "jest": "^29.7.0"
   }
 }
